@@ -1,6 +1,8 @@
 # Default values for elasticsearch-operator.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
+name: elasticsearch
+
 image:
   repository: upmcenterprises/docker-elasticsearch-kubernetes
   tag: 6.1.3_0

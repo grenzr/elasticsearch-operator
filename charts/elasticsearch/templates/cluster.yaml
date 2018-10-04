@@ -1,7 +1,7 @@
 apiVersion: enterprises.upmc.com/v1
 kind: ElasticsearchCluster
 metadata:
-  name: {{ .Release.Name }}-cluster
+  name: {{ .Values.name }}-es-cluster
   labels:
     app: {{ template "elasticsearch.name" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
